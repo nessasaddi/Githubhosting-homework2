@@ -9,41 +9,39 @@ body {
   padding: 20px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: arial, sans-serif;
   margin-bottom: -30px;
-  margin-left: -20px;
-  font-weight: 500;
-}
-.nav-item {
-  font-size: 20px;
-  font-family: arial, sans-serif;
-  line-height: 40px;
-  color: black;
 }
 h2 {
-  font-size: 200px;
+  font-size: 185px;
   color: rgb(105, 105, 105);
   position: absolute;
   border: 3px solid rgba(73, 213, 255, 0.423);
-  border-radius: 360px;
+  border-radius: 380px;
   padding: 15px;
+  margin-left: 30px;
 }
 .container {
   color: black;
   padding: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 15px
+}
+.nav-link {
+  font-size: 30px;
+  font-family: arial, sans-serif;
+  line-height: 20px;
+  color: grey;
 }
 .daysoftheweek {
   position: static;
   list-style: none;
 }
 .tues {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
-  border: 3px solid rgba(188, 188, 188, 0.369);
+  border: 1px solid rgba(188, 188, 188, 0.369);
   border-radius: 5px;
   padding: 8px;
   text-align: right;
@@ -51,10 +49,10 @@ h2 {
   margin-bottom: 15px;
 }
 .wed {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
-  border: 3px solid rgba(188, 188, 188, 0.369);
+  border: 1px solid rgba(188, 188, 188, 0.369);
   border-radius: 5px;
   padding: 8px;
   text-align: right;
@@ -62,10 +60,10 @@ h2 {
   margin-bottom: 15px;
 }
 .thurs {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
-  border: 3px solid rgba(188, 188, 188, 0.369);
+  border: 1px solid rgba(188, 188, 188, 0.369);
   border-radius: 5px;
   padding: 8px;
   text-align: right;
@@ -73,10 +71,10 @@ h2 {
   margin-bottom: 15px;
 }
 .fri {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
-  border: 3px solid rgba(188, 188, 188, 0.369);
+  border: 1px solid rgba(188, 188, 188, 0.369);
   border-radius: 5px;
   padding: 8px;
   text-align: right;
@@ -84,10 +82,10 @@ h2 {
   margin-bottom: 15px;
 }
 .sat {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
-  border: 3px solid rgba(188, 188, 188, 0.369);
+  border: 1px solid rgba(188, 188, 188, 0.369);
   border-radius: 5px;
   padding: 8px;
   text-align: right;
@@ -96,7 +94,7 @@ h2 {
 }
 .information {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(122, 122, 122);
   border: 1px solid rgba(249, 220, 29, 0.18);
   border-radius: 35px;
@@ -113,14 +111,20 @@ h2 {
   color: grey;
 }
 .searchbar {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(188, 188, 188);
-  border: 2px solid rgb(188, 188, 188);
-  padding: 10px;
-  text-align: right;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 5px;
+  padding: 8px;
+  text-align: left;
 }
 .searchbutton {
-  padding: 10px;
-  border-radius: 10px;
-  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+  color:grey;
+  border: 2px solid rgb(188, 188, 188);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
 }
