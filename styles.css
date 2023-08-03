@@ -1,86 +1,51 @@
 body {
-  font-family:arial,sans-serif;
+  font-family: arial, sans-serif;
 }
+
 .weatherbox {
   max-width: 650px;
-  margin: 30px; auto;
+  margin: 30px auto;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 20px;
 }
+
 h1 {
   font-size: 25px;
-  font-family: arial, sans-serif;
   margin-bottom: -30px;
 }
+
 h2 {
   font-size: 185px;
   color: rgb(105, 105, 105);
   position: absolute;
   border: 3px solid rgba(73, 213, 255, 0.423);
-  border-radius: 380px;
+  border-radius: 360px;
   padding: 15px;
   margin-left: 30px;
 }
+
 .container {
   color: black;
   padding: 20px;
-  margin: 15px
+  margin: 15px;
 }
+
 .nav-link {
   font-size: 30px;
-  font-family: arial, sans-serif;
   line-height: 20px;
   color: grey;
 }
+
 .daysoftheweek {
   position: static;
   list-style: none;
 }
-.tues {
-  font-size: 15px;
-  color: rgba(128, 128, 128, 0.639);
-  background-color: rgba(218, 218, 218, 0.342);
-  border: 1px solid rgba(188, 188, 188, 0.369);
-  border-radius: 5px;
-  padding: 8px;
-  text-align: right;
-  margin-left: 300px;
-  margin-bottom: 15px;
-}
-.wed {
-  font-size: 15px;
-  color: rgba(128, 128, 128, 0.639);
-  background-color: rgba(218, 218, 218, 0.342);
-  border: 1px solid rgba(188, 188, 188, 0.369);
-  border-radius: 5px;
-  padding: 8px;
-  text-align: right;
-  margin-left: 300px;
-  margin-bottom: 15px;
-}
-.thurs {
-  font-size: 15px;
-  color: rgba(128, 128, 128, 0.639);
-  background-color: rgba(218, 218, 218, 0.342);
-  border: 1px solid rgba(188, 188, 188, 0.369);
-  border-radius: 5px;
-  padding: 8px;
-  text-align: right;
-  margin-left: 300px;
-  margin-bottom: 15px;
-}
-.fri {
-  font-size: 15px;
-  color: rgba(128, 128, 128, 0.639);
-  background-color: rgba(218, 218, 218, 0.342);
-  border: 1px solid rgba(188, 188, 188, 0.369);
-  border-radius: 5px;
-  padding: 8px;
-  text-align: right;
-  margin-left: 300px;
-  margin-bottom: 15px;
-}
+
+.tues,
+.wed,
+.thurs,
+.fri,
 .sat {
   font-size: 15px;
   color: rgba(128, 128, 128, 0.639);
@@ -92,6 +57,7 @@ h2 {
   margin-left: 300px;
   margin-bottom: 15px;
 }
+
 .information {
   text-align: center;
   font-size: 20px;
@@ -102,6 +68,7 @@ h2 {
   background-color: rgba(249, 220, 29, 0.18);
   margin-top: 30px;
 }
+
 .desc {
   position: absolute;
   top: 405px;
@@ -110,6 +77,7 @@ h2 {
   font-weight: 600;
   color: grey;
 }
+
 .searchbar {
   font-size: 15px;
   color: rgb(188, 188, 188);
@@ -118,10 +86,11 @@ h2 {
   padding: 8px;
   text-align: left;
 }
+
 .searchbutton {
   text-align: center;
   font-size: 15px;
-  color:grey;
+  color: grey;
   border: 2px solid rgb(188, 188, 188);
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
