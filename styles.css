@@ -133,8 +133,9 @@ form {
   padding: 20px;
   margin: 15px;
 }
-#fahrenheit-link,
-#celsius-link {
+
+.fahrenheit-link,
+.celsius-link {
   cursor: pointer;
   font-size: 10px;
 }
