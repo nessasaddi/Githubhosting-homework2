@@ -28,16 +28,20 @@ h2 {
   color: rgb(105, 105, 105);
   position: absolute;
   border: 3px solid rgba(73, 213, 255, 0.423);
-  border-radius: 360px;
-  padding: 20px;
+  border-radius: 365px;
+  padding: 25px;
   margin-left: 30px;
   margin-top: 0px;
+}
+
+.float-left {
+  float: left;
 }
 
 h3 {
   font-size: 20px;
   margin-left: 80px;
-  margin-top: -70px;
+  margin-top: -80px;
 }
 
 .container {
@@ -54,8 +58,9 @@ h3 {
 }
 
 .daysoftheweek {
-  position: static;
+  position: flex;
   list-style: none;
+  margin-top: -90px;
 }
 
 .tues,
@@ -85,7 +90,7 @@ h3 {
   border-radius: 35px;
   padding: 10px;
   background-color: rgba(249, 220, 29, 0.18);
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 form {
