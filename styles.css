@@ -3,26 +3,40 @@ body {
 }
 
 .weatherbox {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
   max-width: 650px;
   margin: 30px auto;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 20px;
 }
+.desc {
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+}
 
 h1 {
   font-size: 25px;
-  margin-bottom: -30px;
 }
 
 h2 {
   font-size: 185px;
   color: rgb(105, 105, 105);
-  position: absolute;
+  position: fixed;
   border: 3px solid rgba(73, 213, 255, 0.423);
   border-radius: 360px;
-  padding: 15px;
+  padding: 20px;
   margin-left: 30px;
+  margin-top: 0px;
+}
+h3 {
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: -70px;
 }
 
 .container {
@@ -66,16 +80,7 @@ h2 {
   border-radius: 35px;
   padding: 10px;
   background-color: rgba(249, 220, 29, 0.18);
-  margin-top: 30px;
-}
-
-.desc {
-  position: absolute;
-  top: 405px;
-  left: 200px;
-  font-size: 20px;
-  font-weight: 600;
-  color: grey;
+  margin-top: 50px;
 }
 
 .searchbar {
