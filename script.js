@@ -1,3 +1,36 @@
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+  let forecast = null;
+
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.daily[index];
+    forecastElement.innerHTML += `
+    <div class="col-2">
+      <div class="weather-forecast-date">${formatDay(forecast.dt)}</div>
+      <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        alt="${forecast.weather[0].description}"
+        width="42"
+      />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"> ${Math.round(
+          forecast.temp.max
+        )}° </span>
+        <span class="weather-forecast-temperature-min"> ${Math.round(
+          forecast.temp.min
+        )}° </span>
+      </div>
+      <div class="weather-forecast-description">
+        ${forecast.weather[0].description}
+      </div>
+    </div>
+  `;
+  }
+}
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -90,4 +123,4 @@ cityLinks.forEach((link) => {
   link.addEventListener("click", handleCityClick);
 });
 
-searchCity("New York");
+searchCity("Los Angeles");
