@@ -22,16 +22,18 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+let temperatureElement = document.querySelector(".weatherbox h2");
+let celsiusTemperature = null;
+
 function displayTemperature(response) {
-  let temperatureElement = document.querySelector(".weatherbox h2");
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   let cityElement = document.querySelector(".nav-link");
   let informationElement = document.querySelector(".information");
   let dateElement = document.querySelector(".weatherbox h3");
   let iconElement = document.querySelector("#icon");
 
-  let celsiusTemperature = response.data.main.temp;
-
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   informationElement.innerHTML = `Weather: ${
     response.data.weather[0].description
@@ -45,6 +47,23 @@ function displayTemperature(response) {
   iconElement.setAttribute("src", iconUrl);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function searchCity(city) {
   let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
