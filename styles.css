@@ -1,15 +1,17 @@
 body {
   font-family: arial, sans-serif;
+  background-color: #abd4e1;
 }
 
 .weatherbox {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
   max-width: 650px;
-  margin: 30px auto;
-  border: 1px solid grey;
+  margin: 0px auto;
+  border: 0px solid;
   border-radius: 5px;
   padding: 20px;
 }
@@ -25,6 +27,7 @@ h1 {
 
 h2 {
   font-size: 185px;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(105, 105, 105);
   position: absolute;
   border: 3px solid rgba(73, 213, 255, 0.423);
@@ -40,21 +43,25 @@ h2 {
 
 h3 {
   font-size: 20px;
+  color: rgb(232, 123, 39);
   margin-left: 80px;
   margin-top: -80px;
+  font-weight: bold;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  margin: 15px;
+  padding: 0px;
+  margin-top: 10px;
 }
 
 .nav-link {
-  font-size: 30px;
-  line-height: 30px;
-  color: grey;
+  font-size: 28px;
+  padding: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .daysoftheweek {
@@ -87,7 +94,7 @@ h3 {
   font-size: 19px;
   color: rgb(122, 122, 122);
   border: 1px solid rgba(249, 220, 29, 0.18);
-  border-radius: 35px;
+  border-radius: 2px;
   padding: 10px;
   background-color: rgba(249, 220, 29, 0.18);
   margin-top: 60px;
@@ -129,4 +136,8 @@ form {
 #fahrenheit-link,
 #celsius-link {
   cursor: pointer;
+  font-size: 10px;
+}
+.units {
+  margin-left: 110px;
 }
