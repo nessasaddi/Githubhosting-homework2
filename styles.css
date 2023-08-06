@@ -12,7 +12,7 @@ body {
   max-width: 650px;
   margin: 0px auto;
   border: 0px solid;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 20px;
 }
 .desc {
@@ -26,27 +26,38 @@ h1 {
 }
 
 h2 {
-  font-size: 185px;
+  font-size: 150px;
   font-family: "Courier New", Courier, monospace;
   color: rgb(105, 105, 105);
-  position: absolute;
-  border: 3px solid rgba(73, 213, 255, 0.423);
-  border-radius: 365px;
-  padding: 25px;
-  margin-left: 30px;
-  margin-top: 0px;
+  margin-top: 50px;
+  margin-left: 75px;
 }
 
 .float-left {
-  float: left;
+  position: absolute;
+  margin-left: 115px;
 }
 
 h3 {
   font-size: 20px;
+  text-decoration: italic;
   color: rgb(232, 123, 39);
-  margin-left: 80px;
-  margin-top: -80px;
   font-weight: bold;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 90px;
+}
+
+.fahrenheit-link,
+.celsius-link {
+  cursor: pointer;
+}
+.units {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 110px;
 }
 
 .container {
@@ -57,7 +68,7 @@ h3 {
 }
 
 .nav-link {
-  font-size: 28px;
+  font-size: 25px;
   padding: 20px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -67,7 +78,7 @@ h3 {
 .daysoftheweek {
   position: flex;
   list-style: none;
-  margin-top: -90px;
+  margin-top: -270px;
 }
 
 .tues,
@@ -76,6 +87,7 @@ h3 {
 .fri,
 .sat {
   font-size: 15px;
+  font-family: helvetica;
   color: rgba(128, 128, 128, 0.639);
   background-color: rgba(218, 218, 218, 0.342);
   border: 1px solid rgba(188, 188, 188, 0.369);
@@ -84,9 +96,6 @@ h3 {
   text-align: right;
   margin-left: 300px;
   margin-bottom: 15px;
-}
-.units {
-  display: flex;
 }
 
 .information {
@@ -97,48 +106,49 @@ h3 {
   border-radius: 2px;
   padding: 10px;
   background-color: rgba(249, 220, 29, 0.18);
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .searchbar {
-  font-size: 15px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(188, 188, 188);
   border: 1px solid rgb(188, 188, 188);
   border-radius: 5px;
-  padding: 8px;
-  text-align: left;
-  margin-right: 10px;
+  padding: 10px;
+  width: 350px;
 }
 
 .searchbutton {
-  text-align: center;
-  font-size: 15px;
-  color: grey;
-  border: 1px solid rgb(188, 188, 188);
+  color: white;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 8px;
-  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #b06db7c1;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 2px;
+}
+
+.searchbutton:hover {
+  background-color: #9c5fa2;
 }
 
 .small-container {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   margin: 15px;
-}
-
-.fahrenheit-link,
-.celsius-link {
-  cursor: pointer;
-  font-size: 10px;
-}
-.units {
-  margin-left: 110px;
 }
