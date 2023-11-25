@@ -23,29 +23,55 @@ body {
 
 h1 {
     font-size: 180px;
-    font-family: ;
-    font-weight: bold;
+    font-weight: thin;
     color: #feb47b;
     line-height: 200px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
     color: grey;
 }
+
+.temp {
+    background-color: white;
+    border-radius: 200px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.095);
+    height: 250px;
+    width: 250px;
+    display: absolute;
+    margin-left: 0px;
+  }
+
+  .oneclick {
+    display: absolute;
+    font-weight: bold;
+    margin-left: 175px;
+    margin-top: -275px;
+    font-size:120px;
+    color: #9e6cb5;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
 .nav-link {
     font-size: 20px;
     padding: 30px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-link:hover {
-    color: #9e6cb5; 
+    color: #9e6cb5;
+    font-size: 22px;
+
 }
 
 .row {
@@ -54,46 +80,44 @@ h2 {
 
 .information {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 19px;
-    font-weight: bold;
-    color: rgb(122, 122, 122);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: rgb(139, 139, 139);
     border: 0;
     border-radius: 30px;
     padding: 10px;
-    background-color: rgb(255, 232, 149);
+    background-color: rgb(255, 237, 170);
     margin: 25px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.095);
 }
 
+.information:hover {
+    background-color: rgb(255, 230, 138);
+}
+
+.col {
+    background-color: white;
+    color:#9ad3ff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.095);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
 .searchbar {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     color: #b1b1b184;
     border: 2px solid #ffffff;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 12px;
     height: 40px;
     width: 100%;
 }
 
-.searchbutton {
-    color: white;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 130px;
-    border: none;
-    border-radius: 20px;
-    background-color: #9e6cb5;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.searchbutton:hover {
-    background-color: #882eb2; 
-}
-
-.small-container {
+  .small-container {
     font-family: "Courier New", Courier, monospace;
     font-size: 13px;
     display: flex;
@@ -101,47 +125,3 @@ h2 {
     padding: 10px;
     margin: 15px;
 }
-
-.button {
-    font-size: 10px;
-    padding: 7px;
-    border-radius: 25px;
-    background-color: lightgrey;
-    color: #9e6cb5;
-    cursor: pointer;
-    border: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.095);
-    transition: 0.3s;
-  }
-
-  .button:hover {
-    color: white;
-  }
-
-  .oneclick {
-    display: absolute;
-    margin-left: 200px;
-    margin-top: -220px;
-  }
-
-  .temp {
-    background-color: white;
-    border-radius: 200px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.095);
-    height: 250px;
-    width: 250px;
-    display: absolute;
-    margin-left: 5px;
-  }
-
-  .col {
-    background-color: white;
-    color:#9ad3ff;
-    padding: 2px 2px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.095);
-    font-family: 'Courier New', Courier, monospace;
-  }
