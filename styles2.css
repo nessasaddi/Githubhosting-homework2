@@ -4,13 +4,48 @@ body {
     height: 100vh;
 }
 
+h4 {
+    text-align: center;
+    font-family: 'Hina Mincho', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -.5px;
+    color: #a48ab098;
+    font-size: 13px;
+}
+
 .container {
     display: flex;
     justify-content: center;
 }
 
+.nav {
+    padding-top: 30px;
+}
+
+.nav-link {
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+    color: #9e6cb5;
+    font-size: 22px;
+
+}
+
 .weatherbox {
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(243, 243, 243, 0.614);
     border: 2px solid white;
     display: flex;
     flex-direction: column;
@@ -22,11 +57,11 @@ body {
 }
 
 h1 {
-    font-size: 180px;
+    font-size: 200px;
     font-weight: thin;
     color: #feb47b;
-    line-height: 200px;
-    font-family: 'Roboto', sans-serif;
+    line-height: 150px;
+    font-family: 'Hina Mincho', sans-serif;
     letter-spacing: -5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -53,41 +88,34 @@ h2 {
   .oneclick {
     display: absolute;
     font-weight: bold;
-    margin-left: 175px;
-    margin-top: -275px;
-    font-size:120px;
-    color: #9e6cb5;
+    margin-left: 190px;
+    margin-top: -250px;
+    font-size: 100px;
+    color: #feb47b;
     cursor: pointer;
     transition: 0.3s;
   }
 
-.nav-link {
-    font-size: 20px;
-    padding: 30px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.nav-link:hover {
-    color: #9e6cb5;
-    font-size: 22px;
-
-}
-
-.row {
+h3 {
+    background-color: white;
+    color:#9ad3ff;
     padding: 10px;
-}
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.095);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
 
 .information {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     color: rgb(139, 139, 139);
-    border: 0;
+    border: 1px solid white;
     border-radius: 30px;
     padding: 10px;
     background-color: rgb(255, 237, 170);
-    margin: 25px;
+    margin: 15px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.095);
 }
 
@@ -95,15 +123,7 @@ h2 {
     background-color: rgb(255, 230, 138);
 }
 
-.col {
-    background-color: white;
-    color:#9ad3ff;
-    padding: 2px 5px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.095);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-  }
+
 
 .searchbar {
     font-size: 15px;
@@ -125,3 +145,30 @@ h2 {
     padding: 10px;
     margin: 15px;
 }
+
+
+
+
+@media (max-width: 700px) {
+    .nav-link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .nav-link:hover {
+        color: #9e6cb5;
+        font-size: 18px;
+    }
+    .weatherbox {
+        display: flex;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    h3 {
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 14px;
+      }
+    }
